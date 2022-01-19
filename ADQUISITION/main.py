@@ -137,9 +137,9 @@ if args.tipo == "MasCercana":
     print("archivo estacion mas cercana guardado en la carpeta de DATA")
 
 elif args.tipo == "TodasEstaciones":
-    distancias_ubicacion = todas_las_estaciones()
+    todas_ubicaciones = todas_las_estaciones()
     # print(distancias_ubicacion)
-    distancias_ubicacion.to_csv("../DATA/todas_las_ubicaciones.csv", sep= ";")
+    todas_ubicaciones.to_csv("../DATA/todas_las_ubicaciones.csv", sep= ";")
     print("archivo de todas las estaciones guardado en la carpeta de DATA")
 
 else:
